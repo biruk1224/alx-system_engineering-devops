@@ -1,0 +1,1 @@
+This is for setting up and installing mysql 

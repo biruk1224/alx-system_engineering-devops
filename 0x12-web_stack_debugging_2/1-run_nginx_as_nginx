@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Configures NGINX to run as user nginx instead of root
+
+# Kill nginx process in case it is currently running
+pkill nginx
+
+# Change permissions of NGINX config files
+chown nginx:nginx /etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
+
+# Have NGINX listen on port 8080
+sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
+
+# /var/log/nginx/error.log shows port 8080 is being used
+# netstat -lpn shows apache2 is using :::8080
+pkill apache2
+
+sudo -u nginx service nginx start

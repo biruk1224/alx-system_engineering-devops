@@ -1,0 +1,1 @@
+Using bash to automate web debugging
