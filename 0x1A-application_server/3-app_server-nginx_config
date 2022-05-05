@@ -1,3 +1,5 @@
+
+
 # Configures Nginx to serve the route /airbnb-onepage/ from AirBnB_clone_v2.
 
 server {
@@ -12,9 +14,15 @@ server {
         proxy_pass http://128.0.0.1:5000/airbnb-onepage/;
     }
 
+
+    location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
+        proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+    }
+
     error_page 405 /404.html;
     location /405 {
         root /var/www/html;
         internal;
     }
 }
+
