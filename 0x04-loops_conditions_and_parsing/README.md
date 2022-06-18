@@ -1,68 +1,37 @@
-**This is folder contains more bash script projects**
 
-``awk # pattern scanning and processing language
-basename # strip directory and suffix from filenames
-bg # resumes suspended jobs without bringing them to the foreground
-cat # print files
-cd # change the shell working directory.
-chmod # change file mode
-chown # change file owner and group
-crontab # maintain crontab files
-curl # transfer a URL
-cut # remove sections from each line of files
-date # display or set date and time
-dig # DNS lookup utility
-df # report file system disk space usage
-diff # compare files line by line
-du # estimate file space usage
-echo # display a line of text
-find # search for files in a directory hierarchy
-fg # resumes suspended jobs and bring them to the foreground
-grep # print lines matching a pattern
-kill # send a signal to a process
-less # read file with pagination
-ln # create links
-ls # list directory contents
-lsb_release # print distribution-specific information
-lsof # list open files
-mkdir # create
-mv # move files
-nc # arbitrary TCP and UDP connections and listens
-netstat # print network connections, routing tables, interface statistics...
-nice # execute a utility with an altered scheduling priority
-nproc # print the number of processing units available
-passwd # change user password
-pgrep # look up processes based on name and other attributes
-pkill # send signal to processes based on name and other attributes
-printenv # print all or part of environment
-pwd # print name of current/working directory
-top # display Linux processes
-tr # translate or delete characters
-ps # report a snapshot of the current processes
-rm # remove files or directories
-rmdir # remove directories
-rsync # remote file copy
-scp # secure copy (remote file copy program)
-sed # stream editor for filtering and transforming text
-sleep # suspend execution for an interval of time
-sort # sort lines of text file
-ssh # OpenSSH SSH client (remote login program)
-ssh-keygen # SSH key generation, management and conversion
-su # substitute user identity
-sudo # execute a command as another user
-tail # output the last part of files
-tar # manipulate archives files
-tr # translate or delete characters
-uname # Print operating system name
-uniq # report or omit repeated lines
-uptime # show how long system has been running
-w # Show who is logged on and what they are doing
-whereis # locate the binary, source, and manual page files for a command
-which # locate a command
-wc # print newline, word, and byte counts for each file
-xargs # build and execute command lines from standard input
-| # redirect standard output to another command
-> # redirect standard output
-< # redirect standard input
-& # send process to background
-``
+# ```Learning Objectives```
+
+> At the end of this project, you are expected to be able to explain to [anyone](https://alx-intranet.hbtn.io/rltoken/UnkzDNdH09TFJ0-Y56azyg), without the help of Google:
+
+
+## General
+- How to create SSH keys
+- What is the advantage of using `#!/usr/bin/env` bash over `#!/bin/bash`
+- How to use `while`, `until` and `for` loops
+- How to use `if`, `else`, `elif` and `case` condition statements
+- How to use the `cut` command
+- What are files and other comparison operators, and how to use them
+
+
+
+# ```Requirements```
+
+
+### General
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be interpreted on Ubuntu 20.04 LTS
+- All your files should end with a new line
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- All your Bash script files must be executable
+- You are not allowed to use `awk`
+- Your Bash script must pass `Shellcheck` (version 0.7.0) without any error
+- The first line of all your Bash scripts should be exactly `#!/usr/bin/env` bash
+- The second line of all your Bash scripts should be a comment explaining what is the script doing
+- More Info
+### ```Shellcheck```
+- [Shellcheck](https://alx-intranet.hbtn.io/rltoken/joK6l_yEZ9N7T0GQ1RDjLA) is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and - provide advice on edge cases that you might not have thought about. `Shellcheck` is your friend! All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.
+
+- `Shellcheck` is available on the school’s computers. If you want to use it on your own computer, here is how to install [it](https://alx-intranet.hbtn.io/rltoken/jbz0_-i3TV3WpKgxhyrtpA).
+
+
+- For every feedback, `Shellcheck` will provide a code that you can use to get more information about the issue, for example for code SC2034, you can [browse]( https://github.com/koalaman/shellcheck/wiki/SC2034)

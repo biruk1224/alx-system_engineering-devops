@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script parses an apache server log file to extract the IP address and
-# HTTP status code from each entry
+# Displays the IP and status code of an Apache log file
 
-awk '{print $1" "$9}' apache-access.log
+awk '{ printf "%s %s\n", $1, $9 }' "apache-access.log"

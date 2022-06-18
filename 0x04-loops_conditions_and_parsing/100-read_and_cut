@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
-# This script displays the content of the file /et/passwd but only displays:
-# username
-# user id
-# Home directory path for the user
+# Displays username, userid, and home directory path of /etc/passwd in list
 
-filename='/etc/passwd'
-
-while read line
-do
-  echo "$line" | cut -d ":" -f 1,3,6
-done < $filename
+while read -r line; do
+    echo "$line" | cut -d':' -f1,3,6
+done </etc/passwd
