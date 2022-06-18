@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying information about the holbertonschool file.
+# use if and, else: check if the file exists and print:
+# If the file exists, does not exist, is empty or not, is a regular or not.
+name_file='holbertonschool'
+if [ -e $name_file ]
+then
+    echo "$name_file file exists"
+    if [ -s $name_file ]
+    then
+  echo "$name_file file is not empty"
+    else
+  echo "$name_file file is empty"
+    fi
+    if [ -f $name_file ]
+    then
+  echo "$name_file is a regular file"
+    fi
+else
+    echo "$name_file file does not exist"
+fi

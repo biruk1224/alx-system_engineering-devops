@@ -1,3 +1,2 @@
 #!/bin/bash
 grep bin /etc/passwd | wc -l
->>>>>>> 1b78c7af7fa2571fa11a6cf13720e22318f01d4d

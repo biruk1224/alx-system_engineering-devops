@@ -1,1 +1,1 @@
-This is shell_variable_expnasions_
+**This is a shell variables expansions directory**
