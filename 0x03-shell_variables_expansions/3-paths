@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -o "[/a-zA-Z/._]*" <<< $PATH | wc -l
+echo $PATH | tr -s ":" "\n" | wc -l
